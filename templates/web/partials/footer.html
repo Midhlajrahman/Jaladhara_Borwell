@@ -1,0 +1,99 @@
+{% load static %}
+<!-- footer start -->
+<footer class="footer widget-footer clearfix">
+  <div class="first-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+          <div class="widget widget_text clearfix">
+            <div class="footer-logo">
+              <img id="footer-logo-img" class="img-center" src="{% static 'web/images/logo/borewell_logo.svg' %}" alt="" style="max-height: 80px;" />
+            </div>
+            <ul class="widget_contact_wrapper">
+              <li>
+                <i class="fa fa-map-marker cmt-textcolor-skincolor"></i> <a href="https://maps.app.goo.gl/jyJGJgXcWjLpoYtb6">Perinthalmanna Road, Koppam</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o cmt-textcolor-skincolor"></i>
+                <a href="mailto:jaladharaborewellkoppamperinth@gmail.com">jaladharaborewellkoppamperinth</a>
+              </li>
+              <li>
+                <i class="fa fa-phone cmt-textcolor-skincolor"></i> <a href="tel:918943995533">+91 8943995533</a>
+              </li>
+              <li>
+                <i class="fa fa-phone cmt-textcolor-skincolor"></i> <a href="tel:9104922208233">+91 04922208233</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        
+        <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+          <div class="widget widget_nav_menu clearfix">
+            <h3 class="widget-title">Our Services</h3>
+            <ul class="menu-footer-quick-links">
+              {% for service in service_list %}
+              <li>
+                  <a href="{% url 'web:service_details' service.slug %}">{{ service.service_name }}</a>
+              </li>
+          {% endfor %}
+          
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+          <div class="widget widget_nav_menu clearfix">
+            <h3 class="widget-title">Useful Links</h3>
+            <ul class="menu-footer-quick-service-links">
+              <li>
+                <a href="{% url 'web:index' %}">Home</a>
+              </li>
+              <li>
+                <a href="{% url 'web:about' %}">About Us</a>
+              </li>
+              <li>
+                <a href="{% url 'web:services' %}">Services</a>
+              </li>
+              <li>
+                <a href="{% url 'web:contact' %}">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+          <div class="widget widget-text clearfix">
+            <h3 class="widget-title">Connect With Us</h3>
+            <form id="subscribe-form" class="newsletter-form" method="post" action="#" data-mailchimp="true">
+              <div class="mailchimp-inputbox" id="subscribe-content">
+                <p>
+                  <input type="email" name="email" placeholder="Email Add.." required="" />
+                </p>
+                <p>
+                  <button type="submit" class="cmt-btn cmt-btn-size-md cmt-btn-shape-round cmt-btn-style-fill cmt-btn-color-skincolor">Send</button>
+                </p>
+              </div>
+            </form>
+            <div class="widget d-flex pt-2">
+              <h3 class="widget-title">Follow Us</h3>
+              <div class="social-icons">
+                <ul class="list-inline d-flex">
+                  <li>
+                    <a class="tooltip-top" target="_blank" href="https://www.facebook.com/jaladhara746?mibextid=LQQJ4d" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a class="tooltip-top" target="_blank" href="https://www.youtube.com/@gafur123" data-tooltip="Youtube"><i class="fa fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a class="tooltip-top" target="_blank" href="https://www.instagram.com/jaladharakoppam?utm_source=qr" data-tooltip="Instagram"><i class="fa fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

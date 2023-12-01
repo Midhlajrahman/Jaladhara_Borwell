@@ -1,0 +1,191 @@
+{% extends "web/base.html" %}
+{% load static %} 
+{% block content %}
+        <!--start main slider-->
+        <div class="banner_slider_wrapper">
+            <div class="banner_slider">
+                <div class="slide" style="background-image: url({% static "web/images/indeximages/borewellbanner.png" %});">
+                    <div class="slide__content cmt-textcolor-white text-left slide_style3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slide__content--headings">
+                                        <div class="">
+                                            <h3 data-animation="fadeInDown" data-delay="3">Welcome  To Jaladhara Borewells</h3>
+                                            <h2  data-animation="fadeInDown " class="s2">Permanent solution for drinking water!</h2>
+                                            <p data-animation="fadeInLeft" data-delay="0.5" >Discover Precision Tube Well Construction and Reliable Water Services at <br>Perinthalmanna Road, Koppam. </p>
+                                            <div data-animation="fadeInUp" data-delay="1.4" class="align-items-center">
+                                                <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor " href="{% url "web:services" %}">Our Services!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!--site-main start-->
+        <div class="site-main">
+            {% comment %} About section start  {% endcomment %}
+            {% include 'web/partials/about.html' %}
+             {% comment %} About section end  {% endcomment %}
+            <!-- fid-section -->
+            {% include 'web/partials/count_banner.html' %}
+            <!-- fid-section-end -->
+            <!-- zero-padding-section -->
+            <section class="cmt-row zero-padding-section bg-layer clearfix">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-lg-6  col-md-12 col-sm-12 ">
+                            
+                            <div class="position-relative z-index-1 pt-120 res-991-pt-45">
+                                <img src="{% static "web/images/indeximages/whychooseus.png" %}" class="img-fluid" alt="bg-image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="cmt-bg  cmt-right-span cmt-bgcolor-white spacing-8">
+                               
+                                <div class="layer-content">
+                                    <!-- section title -->
+                                    <div class="section-title">
+                                        <div class="title-header">
+                                            <h3>Why Choose Us!</h3>
+                                            <h2 class="title">Your Prime Choice for Unrivaled Water Solutions.</h2>
+                                        </div>
+                                    </div><!-- section title end -->
+                                    <div class="title-desc mb-20">
+                                        Jaladhara Borewells is your trusted water solutions partner, offering unmatched expertise and customer-centric services. Choose us for.
+                                    </div>   
+                                    <div class="row no-gutters mt-20 res-991-mt-0">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                            <!--  featured-icon-box --> 
+                                            <div class="featured-icon-box  icon-align-before-title style5">
+                                                    <div class="featured-icon">
+                                                        <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-sm">
+                                                            <i class="ti ti-check-box"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="featured-title">
+                                                        <h3>Proven Excellence</h3>
+                                                    </div>
+                                                <div class="featured-desc">
+                                                    <p>Over a decade of successful projects with a track record of reliability.</p>
+                                                </div>
+                                            </div><!--  featured-icon-box end -->
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-12">
+                                            <!--  featured-icon-box --> 
+                                            <div class="featured-icon-box  icon-align-before-title style5 cmt-horizontal_sep">
+                                                <div class="featured-icon">
+                                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-sm">
+                                                        <i class="ti ti-check-box"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="featured-title">
+                                                    <h3>Customer Satisfaction</h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                 <p>Join our 250+ happy customers who have experienced dependable services.</p>
+                                                </div>
+                                            </div><!--featured-icon-box end -->
+                                        </div>
+                                    </div>
+                                    <div class="row mt-20 res-991-mt-0">
+                                       <div class="col-md-6 col-lg-6 col-sm-12">
+                                            <!--  featured-icon-box --> 
+                                            <div class="featured-icon-box  icon-align-before-title style5">
+                                                <div class="featured-icon">
+                                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-sm">
+                                                        <i class="ti ti-check-box"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="featured-title">
+                                                    <h3>Industrial Insight</h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <p>Leveraging 10+ years of specialized experience to address diverse industrial water needs.
+                                                    </p>
+                                                </div>
+                                            </div><!--  featured-icon-box END -->
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-12">
+                                            <!--  featured-icon-box --> 
+                                            <div class="featured-icon-box  icon-align-before-title style5">
+                                               <div class="featured-icon">
+                                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-sm">
+                                                        <i class="ti ti-check-box"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="featured-title">
+                                                    <h3>Cutting-edge Technology</h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <p>Utilizing state-of-the-art survey systems for precise installations and optimized water yield.</p>
+                                                </div>
+                                            </div><!--  featured-icon-box end -->
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- zero-padding-section end -->
+            <!-- team-section -->
+            {% include 'web/partials/banner.html' %}
+           
+            
+            <section class="cmt-row bottom-zero-padding-section bg-img10 cmt-bgimage-yes cmt-bg clearfix">
+                <div class="container">
+                    <!--row-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 m-auto">
+                            <!--section title-->
+                            <div class="section-title text-center">
+                                <div class="title-header">
+                                    <h3>Customer Reviews</h3>
+                                    <h2 class="title">What Our Client Says About Us</h2>
+                                </div>
+                            </div><!--section title end-->
+                        </div>
+                    </div><!--row end-->
+                    <div class="row slick_slider  slick-arrows-style2  res-991-pl-0 pb-80 res-991-pb-45" data-slick='{"slidesToShow": 2, "slidesToScroll": 1, "arrows":true, "dots":false, "autoplay":true, "infinite":true, "responsive": [{"breakpoint":1100,"settings":{"slidesToShow": 2}} , {"breakpoint":775,"settings":{"slidesToShow": 1}}, {"breakpoint":580,"settings":{"slidesToShow": 1}}]}'>
+                        {% for t in testimonial %}
+                        <div class="cmt-box-col-wrapper col-lg-12">
+                            <!-- testimonials -->
+                            <div class="testimonials style3 box-shadow">
+                                <div class="testimonial-img">
+                                    <div class="testimonial-avatar">
+                                    </div>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="cmt-ratting-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <blockquote class="testimonial-text">{{t.testimonial_content}}</blockquote>
+                                        
+                                    <div class="testimonial-bottom">
+                                        <div class="testimonial-caption">
+                                            <span class="cmt-textcolor-skincolor">{{t.name}}</span>
+                                            <label>{{t.position}}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <!-- testimonials end -->
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+                
+            </section><!-- transport-section end-->
+        </div><!--Main site Over-->
+        {% endblock  %}

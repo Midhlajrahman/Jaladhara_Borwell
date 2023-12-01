@@ -1,0 +1,67 @@
+{% load static %}
+<!-- header start -->
+<header id="masthead" class="header cmt-header-style-01">
+  <!-- cmt-topbar-wrapper -->
+  <div class="cmt-topbar cmt-textcolor-white clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex flex-row align-items-center justify-content-center">
+       
+          <div class="top_bar_contact_item ml-auto">
+            <div class="top_bar_icon">
+              <i class="fa fa-phone"></i>
+            </div> <span>Make a call:</span><a href="tel:+918943995533">+91 8943995533</a>
+          </div>
+          <div class="top_bar_contact_item">
+            <div class="top_bar_icon">
+              <i class="fa fa-map-marker"></i>
+            </div> <a href="https://maps.app.goo.gl/VtXN5jCsgVBTgtUe9">Perinthalmanna Road, Koppam</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cmt-topbar end -->
+  <!-- site-header-menu -->
+  <div id="site-header-menu" class="site-header-menu">
+    <div class="site-header-menu-inner cmt-stickable-header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- site-navigation -->
+            <div class="site-navigation d-flex flex-row align-items-center">
+              <!-- site-branding -->
+              <div class="site-branding mr-auto">
+                <a class="home-link" href="{% url 'web:index' %}" title="Shiftler" rel="home">
+                  <img id="logo-img" class="img-center standardlogo" src="{% static 'web/images/logo/borewell_logo.svg' %}" alt="logo-img" />
+                  <img id="logo-dark" class="img-center stickylogo" src="{% static 'web/images/logo/borewell_logo.svg' %}" alt="logo-img" />
+                </a>
+              </div>
+              <!-- site-branding end -->
+              <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                <span class="menubar-box"><span class="menubar-inner"></span></span>
+              </div>
+              <!-- menu -->
+              <nav class="main-menu menu-mobile" id="menu">
+                <ul class="menu">
+                  <li><a href="{% url 'web:index' %}">Home</a></li>
+                  <li><a href="{% url 'web:about' %}">About</a></li>
+                  <li><a href="{% url 'web:services' %}">Services</a></li>
+                  <li><a href="{% url 'web:projects' %}">Projects</a></li>
+                  <li><a href="{% url 'web:contact' %}">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header_extra cmt-textcolor-white d-flex flex-row align-items-center justify-content-end">
+                <div class="header_btn">
+                  <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor" href="{% url 'web:contact' %}">Request Quote</a>
+                </div>
+              </div>
+            </div>
+            <!-- site-navigation end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- site-header-menu end -->
+</header>

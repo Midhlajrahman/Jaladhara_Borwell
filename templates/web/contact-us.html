@@ -1,0 +1,146 @@
+{% extends "web/base.html" %}
+{% load static %} 
+{% block content %}
+        <!-- page-title -->
+        <div class="cmt-page-title-row">
+            <div class="cmt-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Contact Us</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Go to Shiftler." href="{% url "web:index" %}" class="home">
+                                    <i class="themifyicon ti-home"></i> &nbsp;Home</a>
+                                </span>
+                                <span class="cmt-bread-sep">&nbsp;--&nbsp;</span>
+                                <span>Contact Us</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div>
+        <!-- page-title end -->
+
+    <div class="main-site">
+        <section class="cmt-row cta-section cmt-bgimage-yes bg-img12 cmt-bg cmt-bgcolor-white clearfix">
+            <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
+            <div class="container"><!--container-->
+                <div class="row"><!--row-->
+                    <div class="col-lg-6 col-md-12 col-sm-12 pr-140">
+                        <!-- section title -->
+                        <div class="section-title">
+                            <div class="title-header">
+                                <h2 class="title text-left">Get in Touch with Jaladhara Borewells</h2>
+                            </div>
+                            <div class="title-desc mb-15">
+                                Have a question or need more information about our water solutions? Feel free to reach out to us using the contact details below. Our dedicated team at Jaladhara Borewells is ready to assist you.
+                            </div>
+                        </div>
+                
+                       
+                            <aside class="widget widget-contact with-title">
+                                <div class=" contact-detail ">
+                                    <h3 class="widget-title">Branch -1 </h3>      
+                                    <ul class="widget-contact-wrapper">
+                                        <li><i class="fa fa-map-marker"></i> <a href="https://maps.app.goo.gl/yAp7v5UPiskahaBe9">Perinthalmanna Rd, Koppam, Pattikkad</a></li>
+                                        <li><i class="fa fa-envelope-o"></i><a href="mailto:jaladharaborewellkoppamperinth@gmail.com" target="_blank">jaladharaborewellkoppamperinth@gmail.com</a></li>
+                                        <li><i class="fa fa-phone"></i><a href="tel:+9108943995533">+91 089439 95533</a></li>
+                                        <li><i class="ti ti-alarm-clock"></i>Mon to Sat - 9:00am 6:00pm (Sunday Closed)</li>
+                                    </ul>
+                                </div>
+                            </aside>
+
+                            <aside class="widget widget-contact with-title">
+                                <div class=" contact-detail">
+                                <h3 class="widget-title"  >Branch -2</h3>      
+                                <ul class="widget-contact-wrapper">
+                                    <li><i class="fa fa-map-marker" ></i><a href="https://maps.app.goo.gl/rydKQ4mfyHPtNFZ19" style="font-size: 14px;" >Perinthalmanna, Road, near Government Hospital, Koppam</a></li>
+                                    <li><i class="fa fa-envelope-o"></i><a href="mailto:jaladharaborewellkoppamperinth@gmail.com" target="_blank">jaladharaborewellkoppamperinth@gmail.com</a></li>
+                                    <li><i class="fa fa-phone"></i> <a href="tel:+9109526866746">+91 095268 66746</a></li>
+                                    <li><i class="ti ti-alarm-clock"></i>Mon to Sat - 9:00am 6:00pm (Sunday Closed)</li>
+                                </ul>
+                            </div>
+                            </aside>
+
+                      
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="cmt-bgcolor-white box-shadow cmt-contactform-style3 position-sticky spacing-11">
+                            <!--section-title-->
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h2 class="title">How Can We Help!</h2>
+                                </div>
+                            </div>
+                            <center><!--section-title end-->
+                            <form id="cmt-contactform-3 ContactForm" class="cmt-contactform-3 wrap-form clearfix" method="POST" >
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="ti ti-user"></i>
+                                                    {{form.name}}
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="ti ti-location-pin"></i>
+                                                    {{form.adress}}
+                                                </label>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="ti ti-mobile"></i>
+                                                    {{form.phone}}
+                                                </label>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="fa fa-paper-plane-o"></i>
+                                                    {{form.email}}
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="fa fa-files-o"></i>
+                                                    
+                                                    <span class="text-input">
+                                                        {{ form.service }}
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                    <span class="text-input">
+                                                        {{form.message}}
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                      
+                                        <div class="row justify-content-center">
+                                            <button class="submit cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor" type="submit">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include 'web/partials/banner.html' %}
+    </div>
+   {% endblock %}

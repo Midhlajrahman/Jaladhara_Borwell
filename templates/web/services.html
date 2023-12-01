@@ -1,0 +1,57 @@
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
+  <!-- page-title -->
+  <div class="cmt-page-title-row">
+    <div class="cmt-page-title-row-inner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="page-title-heading">
+              <h2 class="title">Our Services</h2>
+            </div>
+            <div class="breadcrumb-wrapper">
+              <span><a title="Go to Shiftler." href="{% url "web:index" %}" class="home"><i class="themifyicon ti-home"></i> &nbsp;Home</a></span>
+              <span class="cmt-bread-sep">&nbsp;--&nbsp;</span>
+              <span>Services</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- page-title end -->
+
+  <section class="cmt-row grid-section clearfix">
+    <div class="container">
+      <div class="row">
+        {% for s in service %}
+          <div class="col-md-4 mb-30">
+            <!-- featured-imagebox-post -->
+            <div class="featured-imagebox featured-imagebox-post style1">
+              <div class="cmt-post-thumbnail featured-thumbnail"> <a href="{% url 'web:service_details' s.slug %}"><img class="img-fluid" src="{{ s.image.url }}" alt="image" /></a>
+                
+              </div>
+              <div class="featured-content featured-content-post">
+                <div class="cmt-entry-date"></div>
+                <div class="post-title featured-title">
+                  <h3><a href="{% url 'web:service_details' s.slug %}">{{ s.service_name }}</a></h3>
+                </div>
+                <div class="entry-content">
+                  <div class="cmt-box-desc-text">
+                    <p>{{ s.service_description|truncatechars:210 }}.</p>
+                  </div>
+                  <div class="cmt-blogbox-desc-footer">
+                    <a class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark" href="{% url 'web:service_details' s.slug %}" tabindex="-1">Read More<i class="ti ti-angle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- featured-imagebox-post end -->
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- row end -->
+  </section>
+{% endblock %}
